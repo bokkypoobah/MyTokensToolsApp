@@ -3,4 +3,6 @@
 .settings
 scripts/raw/*.json
 scripts/osraw/*.json
+scripts/node_modules
+scripts/package-lock.json
 private

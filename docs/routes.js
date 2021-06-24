@@ -3,6 +3,10 @@ const routes = [{
     component: ZombieBabiesAdoption,
     name: 'ZombieBabiesAdoption',
   }, {
+    path: '/wallets',
+    component: Wallets,
+    name: 'Wallets',
+  }, {
     path: '/beeefLibrary',
     component: BeeefLibrary,
     name: 'BeeefLibrary',

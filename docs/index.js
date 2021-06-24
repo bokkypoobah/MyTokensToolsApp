@@ -6,6 +6,7 @@ Vue.use(Vuex);
 // Vue.component('apexchart', VueApexCharts);
 Vue.component('connection', Connection);
 Vue.component('tokens', Tokens);
+Vue.component('wallets', Wallets);
 Vue.component('mooncatdata', MoonCatData);
 // Vue.component('flat-pickr', VueFlatpickr);
 
@@ -54,6 +55,7 @@ const store = new Vuex.Store({
   modules: {
     connection: connectionModule,
     tokens: tokensModule,
+    wallets: walletsModule,
     moonCatData: moonCatDataModule,
     nftPostcard: nftPostcardModule,
     beeefLibrary: beeefLibraryModule,

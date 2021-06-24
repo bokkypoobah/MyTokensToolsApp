@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Slumdoge.tools</title>
+    <title>MyTokens.tools</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Slumdoge.tools (c) Bok Consulting Pty Ltd 2021" />
+    <meta name="description" content="MyTokens.tools (c) Bok Consulting Pty Ltd 2021" />
     <meta name="author" content="BokkyPooBah" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@BokkyPooBah" />
     <meta name="twitter:creator" content="@BokkyPooBah" />
     <meta property="og:url" content="https://bokkypoobah.github.io/ZombieBabies/" />
-    <meta property="og:title" content="Slumdoge.tools (c) Bok Consulting Pty Ltd 2021" />
-    <meta property="og:description" content="Slumdoge.tools (c) Bok Consulting Pty Ltd 2021. Not affiliated with Slumdoge Billionaires" />
+    <meta property="og:title" content="MyTokens.tools (c) Bok Consulting Pty Ltd 2021" />
+    <meta property="og:description" content="MyTokens.tools (c) Bok Consulting Pty Ltd 2021" />
     <meta property="og:image" content="https://bokkypoobah.github.io/SlumdogeToolsApp/images/slumdogeskel.png" />
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="css/bootstrap-vue.min.css"/>
@@ -75,6 +75,7 @@
     <script src="functions.js"></script>
     <script src="connectionModule.js"></script>
     <script src="tokensModule.js"></script>
+    <script src="walletsModule.js"></script>
     <script src="moonCatDataModule.js"></script>
     <script src="zombieBabiesAdoption.js"></script>
     <script src="nftPostcard.js"></script>
@@ -107,8 +108,10 @@
         <div>
           <b-navbar variant="light" fixed="top">
             <b-navbar-brand to="/" variant="primary">
-              <img src="images/slumdogeskel.png" style="max-width: 45px; margin-top: -4px;" alt="Logo" />
-              Slumdoge.tools
+              <b-avatar style="object-fit: contain; " size="2em" variant="info" src="images/bganpunkv2_1604.gif"></b-avatar>
+              MyTokens.tools
+              <!-- <img src="images/bganpunkv2_1604.gif" style="max-width: 45px; margin-top: -4px;" alt="Logo" /> -->
+
             </b-navbar-brand>
             <b-navbar-nav class="ml-auto">
               <b-nav-item size="sm" to="/beeefLibrary" active-class="active" v-b-popover.hover="'Public PNGs BeeefLibrary'">BeeefLibrary</b-nav-item>
@@ -136,6 +139,8 @@
                   <b-card no-body class="m-2 p-1">
                     <b-card-body class="m-1 p-0">
                       <connection></connection>
+                      <br />
+                      <wallets></wallets>
                       <br />
                       <tokens></tokens>
                       <br />

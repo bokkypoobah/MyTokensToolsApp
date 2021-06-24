@@ -12,7 +12,7 @@ const NFTPostcard = {
               {{ slumDogeTraits }}
 
               <b-card-group deck class="m-0">
-                <div v-for="(slumDoge, slumDogeIndex) in slumdogeData.slice(0, 10000)">
+                <div v-for="(slumDoge, slumDogeIndex) in slumdogeData.slice(0, 10)">
                   <b-card body-class="p-1 d-flex align-items-end justify-content-center" img-bottom img-center header-class="p-1" footer-class="p-2" style="width: 10rem; height: 12.2rem;" img-top class="m-1 p-0 text-center text-bottom position-relative">
                     <template #header>
                       <span variant="secondary" class="small truncate">
